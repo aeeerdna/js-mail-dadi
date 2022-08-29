@@ -11,9 +11,12 @@ console.log('Computer win', computerScore);
 
 //exercise condition
 if (playerScore > computerScore) {                // if player number > computer number --> player win
-    console.log('Player win');
+    //console.log('Player win');
+    document.getElementById('container').innerHTML = 'Player win';
 } else if (playerScore < computerScore) {        // if player number < computer number --> computer win
-    console.log('Computer win');
+    //console.log('Computer win');
+    document.getElementById('container').innerHTML = 'Computer win';
 } else {
-    console.log('Draw');
+    //console.log('Draw');
+    document.getElementById('container').innerHTML = 'Draw';
 }
